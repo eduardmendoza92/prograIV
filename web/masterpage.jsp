@@ -7,7 +7,7 @@
         <title>${pageTitle}</title>
         <!-- Agrega tus estilos aquí -->
         <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
+        <link href="styles/font-awesome.css" rel="stylesheet" type="text/css"/>
         <link href="styles/navbar-top.css" rel="stylesheet" type="text/css"/>
     </head>
     <body class="bg-light">

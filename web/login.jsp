@@ -53,7 +53,16 @@
                                 <label for="password" class="form-label">Contraseña</label>
                                 <input type="password" class="form-control" id="password" placeholder="Placeholder">
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Acceder</button>
+                            <div class="mb-3">
+                                <label for="rol" class="form-label">Rol</label>
+                                <select id="rol" name="rol" class="form-select" aria-label="Default select example" required>
+                                    <option selected disabled>Seleccione un Rol</option>
+                                    <option value="1">Enfermera</option>
+                                    <option value="2">Doctor</option>
+                                    <option value="3">Paciente</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" >Acceder</button>
                         </form>
                         <hr class="my-4">
                         <div class="text-center">
@@ -67,3 +76,16 @@
         <script src="assets/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     </body>
 </html>
+<%
+    String rol = request.getParameter("rol");
+
+    if (rol != null) {
+        if (rol.equals("1")) {
+            response.sendRedirect("navegacion?page=enfermerahome");
+        } else if (rol.equals("2")) {
+            response.sendRedirect("navegacion?page=dochome");
+        } else if (rol.equals("3")) {
+            response.sendRedirect("pacienteHome.jsp");
+        }
+    }
+%>

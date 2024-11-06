@@ -38,6 +38,9 @@ public class NavegationServlet extends HttpServlet {
         } else if ("enfermerahome".equals(page)) {
             contentPage = "enfermerahome.jsp";
             request.setAttribute("pageTitle", "Enfermera");
+        } else if ("efSolicitudUsuario".equals(page)) {
+            contentPage = "efSolicitudUsuario.jsp";
+            request.setAttribute("pageTitle", "Solicitud Usuario");
         } else {
             contentPage = "error.jsp";
             request.setAttribute("pageTitle", "Página No Encontrada");

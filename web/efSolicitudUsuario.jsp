@@ -20,10 +20,10 @@
 <!-- Menú de Navegación -->
 <ul class="nav nav-tabs">    
     <li class="nav-item">
-        <a class="nav-link active" href="navegacion?page=enfermerahome">Solicitudes de Cita</a>
+        <a class="nav-link " href="navegacion?page=enfermerahome">Solicitudes de Cita</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="navegacion?page=efSolicitudUsuario">Solicitudes de Usuario</a>
+        <a class="nav-link active" href="navegacion?page=efSolicitudUsuario">Solicitudes de Usuario</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#">Nueva Cita</a>
@@ -39,7 +39,7 @@
 
 <!-- Título de la Sección -->
 <div class="my-4">
-    <h5>Solicitudes de Citas</h5>
+    <h5>Solicitudes de Usuario</h5>
 </div>
 
 <!-- Tabla de Solicitudes de Usuarios -->
@@ -47,10 +47,8 @@
     <table class="table align-middle bg-white shadow-sm">
         <thead class="table-light">
             <tr>
-                <th scope="col">Nombre del Paciente</th>
-                <th scope="col">Doctor</th>
-                <th scope="col">Feca y Hora</th>
-                <th scope="col">Opciones</th>
+                <th scope="col">Nombre del Usuario</th>
+                <th scope="col">Opción</th>
             </tr>
         </thead>
         <tbody>
@@ -58,17 +56,18 @@
                 <td>
                     <div class="d-flex align-items-center">
                         <div>
-                            <div>Jane Doe</div>
-                            <small class="text-muted">7968-9849</small>
+                            <div>Juan Carlos Estrada</div>
+                            <small class="text-muted">jcestrada</small>
                         </div>
                     </div>
                 </td>
-                <td>Doctor Urbina</td>
-                <td>01/01/2024 06:00 a.m</td>
                 <td>
                     <div class="d-flex align-items-center">
-                        <div class="flex-fill"><i class="fa fa-check-circle-o fa-2x text-success" aria-hidden="true"></i></div>
-                        <div class="flex-fill"><i class="fa fa fa-times-circle-o fa-2x text-danger" aria-hidden="true"></i></div>
+                        <div class="flex-fill">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver Solicitud
+                            </button>
+                        </div>
                     </div>
                 </td>
             </tr>
@@ -76,21 +75,40 @@
                 <td>
                     <div class="d-flex align-items-center">
                         <div>
-                            <div>Jane Doe</div>
-                            <small class="text-muted">6788-8927</small>
+                            <div>Lazaro Brayan Lopex</div>
+                            <small class="text-muted">lblopez</small>
                         </div>
                     </div>
                 </td>
-                <td>Doctor Salazar</td>
-                <td>01/01/2024 06:00 a.m</td>
                 <td>
                     <div class="d-flex align-items-center">
-                        <div class="flex-fill"><i class="fa fa-check-circle-o fa-2x text-success" aria-hidden="true"></i></div>
-                        <div class="flex-fill"><i class="fa fa fa-times-circle-o fa-2x text-danger" aria-hidden="true"></i></div>
+                        <div class="flex-fill">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver Solicitud
+                            </button>
+                        </div>
                     </div>
                 </td>
             </tr>
             <!-- Añade más filas según sea necesario -->
         </tbody>
     </table>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
