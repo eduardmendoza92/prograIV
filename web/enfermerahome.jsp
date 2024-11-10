@@ -1,19 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<style>
-    /* Estilos para la navegación */
-    .nav-tabs .nav-link {
-        border: none;
-        color: #007bff;
-    }
-    .nav-tabs .nav-link.active {
-        border-bottom: 3px solid #007bff; /* Línea inferior para la pestaña activa */
-        color: #000;
-        font-weight: bold;
-    }
-    .nav-tabs .nav-link:hover {
-        color: #0056b3;
-    }
-</style>
+
 <!-- Encabezado de Bienvenida -->
 <h1 class="mb-3">Bienvenid@ Enfermer@ 1</h1>
 

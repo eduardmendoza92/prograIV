@@ -27,7 +27,7 @@ public class NavegationServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         handleRequest(request, response);
     }
-    
+
     private void handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String page = request.getParameter("page");
         String contentPage;
@@ -50,6 +50,12 @@ public class NavegationServlet extends HttpServlet {
         } else if ("efSolicitudUsuario".equals(page)) {
             contentPage = "efSolicitudUsuario.jsp";
             request.setAttribute("pageTitle", "Solicitud Usuario");
+        } else if ("pacientehome".equals(page)) {
+            contentPage = "pacientehome.jsp";
+            request.setAttribute("pageTitle", "Paciente");
+        } else if ("nuevacita".equals(page)) {
+            contentPage = "pnuevacita.jsp";
+            request.setAttribute("pageTitle", "Paciente - Nueva Cita");
         } else {
             contentPage = "error.jsp";
             request.setAttribute("pageTitle", "Página No Encontrada");

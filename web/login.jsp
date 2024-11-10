@@ -85,7 +85,7 @@
         } else if (rol.equals("2")) {
             response.sendRedirect("navegacion?page=dochome");
         } else if (rol.equals("3")) {
-            response.sendRedirect("pacienteHome.jsp");
+            response.sendRedirect("navegacion?page=pacientehome");
         }
     }
 %>
