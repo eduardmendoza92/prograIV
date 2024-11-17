@@ -9,7 +9,10 @@
         <a class="nav-link active" href="navegacion?page=pacientehome">Historial de Citas</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="navegacion?page=nuevacita">Nueva Cita</a>
+        <a class="nav-link " href="navegacion?page=nuevacita">Nueva Cita</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " href="navegacion?page=misdiagnosticos">Mis Diagnosticos</a>
     </li>
     <!-- Espaciador para alinear Cerrar Sesión a la derecha -->
     <li class="nav-item ms-auto">

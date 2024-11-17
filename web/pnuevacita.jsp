@@ -11,6 +11,9 @@
     <li class="nav-item">
         <a class="nav-link active" href="navegacion?page=nuevacita">Nueva Cita</a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="navegacion?page=misdiagnosticos">Mis Diagnosticos</a>
+    </li>
     <!-- Espaciador para alinear Cerrar Sesión a la derecha -->
     <li class="nav-item ms-auto">
         <a class="nav-link text-danger" href="login.jsp">Cerrar Sesión</a>

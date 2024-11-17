@@ -50,12 +50,21 @@ public class NavegationServlet extends HttpServlet {
         } else if ("efSolicitudUsuario".equals(page)) {
             contentPage = "efSolicitudUsuario.jsp";
             request.setAttribute("pageTitle", "Solicitud Usuario");
+        } else if ("efNuevaCita".equals(page)) {
+            contentPage = "efNuevaCita.jsp";
+            request.setAttribute("pageTitle", "Nueva Cita");
+        } else if ("efNewUsuario".equals(page)) {
+            contentPage = "efNewUsuario.jsp";
+            request.setAttribute("pageTitle", "Nueva Usuario");
         } else if ("pacientehome".equals(page)) {
             contentPage = "pacientehome.jsp";
             request.setAttribute("pageTitle", "Paciente");
         } else if ("nuevacita".equals(page)) {
             contentPage = "pnuevacita.jsp";
             request.setAttribute("pageTitle", "Paciente - Nueva Cita");
+        } else if ("misdiagnosticos".equals(page)) {
+            contentPage = "misdiagnosticos.jsp";
+            request.setAttribute("pageTitle", "Paciente - Diagnosticos");
         } else {
             contentPage = "error.jsp";
             request.setAttribute("pageTitle", "Página No Encontrada");
