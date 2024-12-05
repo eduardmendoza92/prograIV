@@ -60,6 +60,7 @@
                                     <option value="1">Enfermera</option>
                                     <option value="2">Doctor</option>
                                     <option value="3">Paciente</option>
+                                    <option value="4">Admin</option>
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-primary w-100" >Acceder</button>
@@ -86,6 +87,9 @@
             response.sendRedirect("navegacion?page=dochome");
         } else if (rol.equals("3")) {
             response.sendRedirect("navegacion?page=pacientehome");
+        }
+        } else if (rol.equals("4")) {
+            response.sendRedirect("navegacion?page=adminhome");
         }
     }
 %>

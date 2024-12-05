@@ -67,7 +67,10 @@ public class NavegationServlet extends HttpServlet {
             request.setAttribute("pageTitle", "Paciente - Diagnosticos");
         } else if ("expedientes".equals(page)) {
             contentPage = "expedientes.jsp";
-            request.setAttribute("pageTitle", "Doctor - Expedientes");
+            request.setAttribute("pageTitle", "Doctor - Expedientes");        
+        } else if ("adminhome".equals(page)) {
+            contentPage = "adminhome.jsp";
+            request.setAttribute("pageTitle", "Administrador");
         }else {
             contentPage = "error.jsp";
             request.setAttribute("pageTitle", "Página No Encontrada");

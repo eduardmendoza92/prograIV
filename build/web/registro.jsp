@@ -24,77 +24,42 @@
             <div class="w-75">
                 <h2 class="mb-4">Registro de Paciente</h2>
                 <form>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="primerNombre" class="form-label">Primer Nombre</label>
-                            <input type="text" class="form-control" id="primerNombre" placeholder="Placeholder">
-                        </div>
-                        <div class="col">
-                            <label for="segundoNombre" class="form-label">Segundo Nombre</label>
-                            <input type="text" class="form-control" id="segundoNombre" placeholder="Placeholder">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="primerApellido" class="form-label">Primer Apellido</label>
-                            <input type="text" class="form-control" id="primerApellido" placeholder="Placeholder">
-                        </div>
-                        <div class="col">
-                            <label for="segundoApellido" class="form-label">Segundo Apellido</label>
-                            <input type="text" class="form-control" id="segundoApellido" placeholder="Placeholder">
-                        </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Juan Carlos" >
                     </div>
                     <div class="mb-3">
-                        <label for="correo" class="form-label">Correo</label>
-                        <input type="email" class="form-control" id="correo" placeholder="Placeholder">
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="celular" class="form-label">Celular</label>
-                            <input type="tel" class="form-control" id="celular" placeholder="Placeholder">
-                        </div>
-                        <div class="col">
-                            <label for="dui" class="form-label">DUI</label>
-                            <input type="text" class="form-control" id="dui" placeholder="Placeholder">
-                        </div>
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Estrada" >
                     </div>
                     <div class="mb-3">
-                        <label for="direccion" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="direccion" placeholder="Placeholder">
+                        <label for="correo" class="form-label">Correo:</label>
+                        <input type="email" class="form-control" id="correo" placeholder="JuanCarlos01@mail.com" >
                     </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="departamento" class="form-label">Departamento</label>
-                            <select class="form-select" id="departamento">
-                                <option selected>Placeholder</option>
-                                <option value="1">Departamento 1</option>
-                                <option value="2">Departamento 2</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <label for="municipio" class="form-label">Municipio</label>
-                            <select class="form-select" id="municipio">
-                                <option selected>Placeholder</option>
-                                <option value="1">Municipio 1</option>
-                                <option value="2">Municipio 2</option>
-                            </select>
-                        </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control" id="telefono" placeholder="7643456" >
                     </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="usuario" class="form-label">Usuario</label>
-                            <input type="text" class="form-control" id="usuario" placeholder="Placeholder">
-                        </div>
-                        <div class="col">
-                            <label for="contraseña" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="contraseña" placeholder="Placeholder">
-                        </div>
+                    <div class="mb-3">
+                        <label for="dirrecion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="dirrecion" placeholder="San Salvador, Avenida Los Héroes" >
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuario:</label>
+                        <input type="password" class="form-control" id="usuario" placeholder="Juan346" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="contra" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="contra" placeholder="123" >
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RegistrarSIModal">Registrar</button>
+                        <button type="button" class="btn btn-danger" onclick="window.location.href = 'login.jsp'">Cancelar</button>
+                    </div>
                 </form>
                 <hr class="my-4">
                 <div class="text-center">
-                    <a href="#" class="text-decoration-none0">¿Ya tiene una cuenta? Regresar</a>
+                    <a href="login.jsp" class="text-decoration-none0">¿Ya tiene una cuenta? Regresar</a>
                 </div>
 
             </div>
