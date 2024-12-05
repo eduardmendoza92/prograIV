@@ -24,7 +24,7 @@
         <label for="fechaConsulta" class="form-label">Buscar diagnóstico:</label>
         <input type="date" class="form-control" id="fechaConsulta" name="fechaConsulta" required>
     </div>
-    <button type="submit" class="btn btn-primary w-100">
+    <button type="button" class="btn btn-primary w-100">
         <i class="fa fa-search"></i> Buscar
     </button>
 </form>
@@ -65,6 +65,6 @@
 <!-- Botón Regresar -->
 <form action="pacienteHome.jsp" method="post" class="text-center">
     <button type="submit" class="btn btn-secondary">
-        <i class="fa fa-arrow-left"></i> Regresar
+        <a class="nav-link active fa fa-arrow-left" href="navegacion?page=pacientehome"></a> Regresar
     </button>
 </form>

@@ -90,11 +90,11 @@
                             <input type="password" class="form-control" id="contraseña" placeholder="Placeholder">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+                    <button type="button" class="btn btn-primary w-100">Registrarse</button>
                 </form>
                 <hr class="my-4">
                 <div class="text-center">
-                    <a href="#" class="text-decoration-none0">¿Ya tiene una cuenta? Regresar</a>
+                    <a href="login.jsp" class="text-decoration-none0">¿Ya tiene una cuenta? Regresar</a>
                 </div>
 
             </div>

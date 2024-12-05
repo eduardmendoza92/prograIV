@@ -5,10 +5,10 @@
 
 <ul class="nav nav-tabs">    
     <li class="nav-item">
-        <a class="nav-link active" href="navegacion?page=enfermerahome">Citas del día</a>
+        <a class="nav-link active" href="navegacion?page=dochome">Citas del día</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="navegacion?page=efSolicitudUsuario">Expedientes</a>
+        <a class="nav-link" href="navegacion?page=expedientes">Expedientes</a>
     </li>
 
     <li class="nav-item ms-auto">
